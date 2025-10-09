@@ -14,7 +14,7 @@ public class FileIO {
         // Læs hele filens indhold (alle linjer samlet i en String)
         String indhold = "";
         while (sc.hasNextLine()) {
-            indhold += sc.nextLine() + "\n";
+            indhold += sc.nextLine() + " ";
         }
 
         // Luk Scanner
