@@ -8,7 +8,6 @@ public class TalFraFil {
     public static void main(String[] args) {
         int[] talArray = new int[5];
 
-
         while (true) {
             try {
                 System.out.println("Hvilken text fil vil du åbne? (Husk .txt):");
@@ -25,9 +24,9 @@ public class TalFraFil {
                 for (int t : talArray) {
                     System.out.println(t);
                 }
-//                scf.close();
-//                sc.close();
-//                break;
+                scf.close();
+                sc.close();
+                break;
             } catch (FileNotFoundException e) {
                 System.out.println("Filen findes ikke! Prøv igen");
             } catch (ArrayIndexOutOfBoundsException e) {
